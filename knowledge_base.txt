@@ -1,0 +1,2 @@
+what is the capital of the France|yes
+what is the capital of Georgia?|Tbilisi

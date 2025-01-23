@@ -1,0 +1,9 @@
+Chatbot: Hello! I am your chatbot. What's your name?
+You: Ioane
+Chatbot: Nice to meet you, Ioane!
+You: what is the capital of Georgia?
+Chatbot: Sorry, I didn't understand that. Can you teach me the correct answer?
+You: Tbilisi
+Chatbot: Thank you! I'll remember that for the future.
+You: quit
+Chatbot: Goodbye! Have a great day!

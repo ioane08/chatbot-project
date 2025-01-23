@@ -1,19 +1,19 @@
 import openai
 import datetime
 
-# Set up the OpenAI API key
+# set up the OpenAI API key
 openai.api_key = ""
 
 
 
 def get_text_embedding(user_input):
-    # Get the embedding for the user's input using text-embedding-ada-002 model
+    # get the embedding for the user's input using text-embedding-ada-002 model
     response = openai.Embedding.create(
         model="text-embedding-ada-002",  # This is the model for text embeddings
         input=user_input
     )
 
-    # Extract the embeddings from the response
+    # extract the embeddings from the response
     embeddings = response['data'][0]['embedding']
 
     return embeddings
@@ -28,10 +28,10 @@ def chat_with_openai():
             print("Goodbye!")
             break
 
-        # Get the embedding for the user's input
+        # get the embedding for the user's input
         embeddings = get_text_embedding(user_input)
 
-        # You can now do something with the embeddings, like storing or comparing them
+        # you can now do something with the embeddings, like storing or comparing them
         print(f"Embedding: {embeddings}")  # This prints out the embedding (a list of numbers)
 
 
@@ -117,6 +117,6 @@ def chatbot():
 
     save_conversation(conversation)
 
-# Start the chatbot
+# start the chatbot
 if __name__ == "__main__":
     chatbot()
